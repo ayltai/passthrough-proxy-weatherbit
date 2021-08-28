@@ -21,4 +21,4 @@ app.get('/v2.0/current', handler)
     .get('/v2.0/forecast/hourly', handler)
     .get('/v2.0/forecast/daily', handler);
 
-exports.handler = async (event, context, callback) => await app.serve(event, context, callback);
+exports.handler = async (event, context, callback) => app.serve(event, context, callback);
